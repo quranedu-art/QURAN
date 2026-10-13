@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quran Education Academy – Learn Quran Online | 7-Day Free Trial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Mulish:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f7f4;--surface:#fff;--ink:#14302b;--muted:#4d6862;--green:#0e3b35;--green2:#165a50;--gold:#c79a3b;--line:#d5e3dd;--hero:#0b2d28;--on-hero:#eef6f2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1b18;--surface:#102823;--ink:#e6f1ed;--muted:#9bb5ad;--green:#e6f1ed;--green2:#7fd1bd;--line:#1d3a34;--hero:#071a17}}
+:root[data-theme="dark"]{--bg:#0a1b18;--surface:#102823;--ink:#e6f1ed;--muted:#9bb5ad;--green:#e6f1ed;--green2:#7fd1bd;--line:#1d3a34;--hero:#071a17}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Mulish,system-ui,sans-serif}
+h1,h2,h3{font-family:Amiri,Georgia,serif;line-height:1.2;margin:0 0 .5em;color:var(--green)}
+h2{font-size:clamp(1.8rem,4vw,2.5rem)}h3{font-size:1.4rem}
+p{margin:0 0 1em}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.lead{color:var(--muted);max-width:60ch}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:800;text-decoration:none;border:2px solid transparent;cursor:pointer;font:800 1rem Mulish,sans-serif;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:#1b1405}
+.btn-line{border-color:currentColor;color:var(--on-hero)}
+/* nav */
+header{position:sticky;top:0;z-index:20;background:var(--hero);color:var(--on-hero);padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font:700 1.4rem Amiri,serif;text-decoration:none}
+.logo b{color:var(--gold)}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{text-decoration:none;font-weight:600;font-size:.95rem}
+nav .btn{padding:9px 18px;font-size:.9rem}
+.menu{display:none;background:none;border:0;color:inherit;font-size:1.7rem;cursor:pointer}
+@media(max-width:800px){.menu{display:block}
+nav ul{display:none;position:absolute;left:0;right:0;top:62px;background:var(--hero);flex-direction:column;padding:18px 20px 24px;gap:16px}
+nav ul.open{display:flex}}
+/* hero */
+.hero{background:var(--hero);color:var(--on-hero);position:relative;overflow:hidden;padding:80px 0 90px}
+.hero svg.pat{position:absolute;inset:0;width:100%;height:100%;opacity:.09}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero h1{color:var(--on-hero);font-size:clamp(2.2rem,6vw,3.8rem)}
+.hero p{color:#bcd3cb;max-width:52ch}
+.bismillah{font:400 clamp(2.4rem,7vw,4.4rem)/1.5 Amiri,serif;color:var(--gold);text-align:center;direction:rtl;border:1px solid rgba(199,154,59,.4);border-radius:24px;padding:36px 16px;background:rgba(255,255,255,.04)}
+.bismillah small{display:block;font:600 .95rem Mulish,sans-serif;color:#bcd3cb;direction:ltr;margin-top:8px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.trust{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px;font-size:.95rem;color:#bcd3cb}
+.trust b{color:var(--gold);font-size:1.3rem;display:block;font-family:Amiri,serif}
+@media(max-width:800px){.hero .wrap{grid-template-columns:1fr}.hero{padding:56px 0 64px}.bismillah{order:-1}}
+/* cards */
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:34px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
+.card .ic{font-size:2rem;display:block;margin-bottom:8px}
+.card p{color:var(--muted);margin:0}
+.steps{counter-reset:s;display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:34px}
+.step{position:relative;padding-top:54px}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;background:var(--gold);color:#1b1405;display:grid;place-items:center;font:800 1.1rem Mulish}
+.step p{color:var(--muted)}
+/* pricing */
+.pricing{background:var(--hero);color:var(--on-hero)}
+.pricing h2{color:var(--on-hero)}.pricing .lead{color:#bcd3cb}
+.plans{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:36px;align-items:stretch}
+.plan{background:#102f29;border:1px solid #24493f;border-radius:20px;padding:30px;display:flex;flex-direction:column;position:relative}
+.plan.pop{border:2px solid var(--gold);background:#143a33}
+.badge{position:absolute;top:-14px;left:30px;background:var(--gold);color:#1b1405;font-weight:800;font-size:.8rem;padding:4px 14px;border-radius:999px}
+.plan h3{color:var(--on-hero);margin-bottom:4px}
+.price{font:700 3.2rem/1 Amiri,serif;color:var(--gold);margin:14px 0 2px}
+.price span{font:600 1rem Mulish,sans-serif;color:#bcd3cb}
+.plan ul{list-style:none;padding:0;margin:18px 0 26px;flex:1}
+.plan li{padding:7px 0 7px 28px;position:relative;color:#d3e4dd}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:800}
+.plan .btn{text-align:center}
+.note{margin-top:26px;color:#bcd3cb;font-size:.95rem}
+/* quotes */
+.quote{font-family:Amiri,serif;font-size:1.2rem;line-height:1.6}
+.quote cite{display:block;font:600 .9rem Mulish,sans-serif;color:var(--muted);margin-top:12px;font-style:normal}
+/* faq */
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:12px}
+summary{font-weight:800;cursor:pointer}
+details p{margin:10px 0 0;color:var(--muted)}
+/* form */
+.trial{background:linear-gradient(160deg,var(--green2),var(--hero));color:#fff}
+.trial h2{color:#fff}
+.trial .box{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+@media(max-width:800px){.trial .box{grid-template-columns:1fr}}
+form{background:var(--surface);color:var(--ink);padding:26px;border-radius:20px;display:grid;gap:14px}
+label{font-weight:800;font-size:.9rem;display:grid;gap:5px}
+input,select{padding:13px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;background:var(--bg);color:var(--ink);width:100%}
+footer{background:var(--hero);color:#bcd3cb;padding:34px 0;padding-bottom:calc(34px + env(safe-area-inset-bottom,0px));text-align:center;font-size:.95rem}
+footer .logo{color:var(--on-hero)}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#052e16;font-weight:800;padding:12px 18px;border-radius:999px;text-decoration:none;z-index:30;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#top">Quran<b>Education</b></a>
+  <nav aria-label="Main">
+   <button class="menu" aria-label="Open menu" aria-expanded="false" id="menu">☰</button>
+   <ul id="links">
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a class="btn btn-gold" href="#trial">Free trial</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero">
+ <svg class="pat" aria-hidden="true"><defs><pattern id="p" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M40 4l9 22 23-9-9 23 22 9-22 9 9 23-23-9-9 22-9-22-23 9 9-23-22-9 22-9-9-23 23 9z" fill="none" stroke="#c79a3b" stroke-width="1.2"/></pattern></defs><rect width="100%" height="100%" fill="url(#p)"/></svg>
+ <div class="wrap">
+  <div>
+   <h1>Learn the Quran online, one-to-one with qualified teachers</h1>
+   <p>Recitation with Tajweed, memorization, and understanding for children and adults. Live classes from home, at times that suit your family.</p>
+   <div class="cta">
+    <a class="btn btn-gold" href="#trial">Start your 7-day free trial</a>
+    <a class="btn btn-line" href="#pricing">See weekly plans</a>
+   </div>
+   <div class="trust">
+    <div><b>7 days</b>free, no card needed</div>
+    <div><b>From $10</b>per week</div>
+    <div><b>1-to-1</b>live classes</div>
+   </div>
+  </div>
+  <div class="bismillah" lang="ar">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ<small>In the name of Allah, the Most Gracious, the Most Merciful</small></div>
+ </div>
+</div>
+
+<section id="courses">
+ <div class="wrap">
+  <h2>Courses for every age and level</h2>
+  <p class="lead">Start from the Arabic letters or continue towards memorizing the whole Quran. Your teacher builds the plan around you.</p>
+  <div class="grid">
+   <div class="card"><span class="ic">📖</span><h3>Noorani Qaida</h3><p>Letters, sounds and reading basics for beginners and young children.</p></div>
+   <div class="card"><span class="ic">🎙️</span><h3>Quran with Tajweed</h3><p>Correct pronunciation and rules of recitation, practised aloud every class.</p></div>
+   <div class="card"><span class="ic">🌙</span><h3>Hifz (Memorization)</h3><p>Daily lesson, revision and listening schedule to memorize with confidence.</p></div>
+   <div class="card"><span class="ic">💡</span><h3>Translation &amp; Tafseer</h3><p>Understand the meaning of what you recite, verse by verse.</p></div>
+   <div class="card"><span class="ic">🤲</span><h3>Daily Duas &amp; Islamic Basics</h3><p>Essential duas, prayer and manners, taught in simple language.</p></div>
+   <div class="card"><span class="ic">🌍</span><h3>Arabic Language</h3><p>Read, understand and speak Arabic step by step.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="how" style="background:var(--surface)">
+ <div class="wrap">
+  <h2>Getting started takes four steps</h2>
+  <div class="steps">
+   <div class="step"><h3>Sign up</h3><p>Fill in the short trial form with your name and preferred time.</p></div>
+   <div class="step"><h3>Meet your teacher</h3><p>We match you with a qualified teacher and test your level.</p></div>
+   <div class="step"><h3>Learn for 7 days free</h3><p>Join live classes on Zoom or Skype from any phone or computer.</p></div>
+   <div class="step"><h3>Pick a weekly plan</h3><p>Happy with the classes? Choose a plan. Stop any time.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="pricing" id="pricing">
+ <div class="wrap">
+  <h2>Simple weekly pricing</h2>
+  <p class="lead">Every plan starts with a 7-day free trial. Pay weekly, no long contract.</p>
+  <div class="plans">
+   <div class="plan">
+    <h3>Basic</h3><p style="color:#bcd3cb;margin:0">For beginners and light schedules</p>
+    <div class="price">$10<span> / week</span></div>
+    <ul><li>2 classes per week</li><li>30 minutes per class</li><li>One-to-one live teacher</li><li>Progress report every month</li></ul>
+    <a class="btn btn-line" href="#trial">Start free trial</a>
+   </div>
+   <div class="plan pop">
+    <span class="badge">Most popular</span>
+    <h3>Standard</h3><p style="color:#bcd3cb;margin:0">Steady progress for most students</p>
+    <div class="price">$15<span> / week</span></div>
+    <ul><li>3 classes per week</li><li>30 minutes per class</li><li>One-to-one live teacher</li><li>Weekly homework and feedback</li><li>Free class recordings</li></ul>
+    <a class="btn btn-gold" href="#trial">Start free trial</a>
+   </div>
+   <div class="plan">
+    <h3>Premium</h3><p style="color:#bcd3cb;margin:0">Fast progress and Hifz students</p>
+    <div class="price">$20<span> / week</span></div>
+    <ul><li>5 classes per week</li><li>45 minutes per class</li><li>Senior one-to-one teacher</li><li>Weekly homework and feedback</li><li>Free class recordings</li><li>Free make-up classes</li></ul>
+    <a class="btn btn-line" href="#trial">Start free trial</a>
+   </div>
+  </div>
+  <p class="note">Prices are in US dollars. Family discount available for 2 or more students.</p>
+ </div>
+</section>
+
+<section id="why">
+ <div class="wrap">
+  <h2>Why families choose us</h2>
+  <div class="grid">
+   <div class="card"><h3>Qualified teachers</h3><p>Male and female teachers with Ijazah and teaching experience.</p></div>
+   <div class="card"><h3>Flexible timings</h3><p>Classes across time zones, including evenings and weekends.</p></div>
+   <div class="card"><h3>Safe for children</h3><p>Parents can sit in on any class and see progress reports.</p></div>
+   <div class="card"><h3>Works on any device</h3><p>Phone, tablet or computer. No special software needed.</p></div>
+  </div>
+ </div>
+</section>
+
+<section style="background:var(--surface)">
+ <div class="wrap">
+  <h2>What parents and students say</h2>
+  <div class="grid">
+   <div class="card quote">“My daughter now reads with Tajweed and looks forward to every class.”<cite>Parent, UK (sample review)</cite></div>
+   <div class="card quote">“The teacher is patient and the weekly plan is easy to manage.”<cite>Parent, USA (sample review)</cite></div>
+   <div class="card quote">“I started Qaida at 40. Seven days free let me try without pressure.”<cite>Student, Canada (sample review)</cite></div>
+  </div>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="wrap" style="max-width:780px">
+  <h2>Questions, answered</h2>
+  <details><summary>Is the trial really free?</summary><p>Yes. You get 7 days of free classes. No payment details are needed to start.</p></details>
+  <details><summary>How does weekly payment work?</summary><p>After the trial you pay for one week at a time, at $10, $15 or $20 depending on your plan. You can pause or cancel before the next week begins.</p></details>
+  <details><summary>Can I change my plan?</summary><p>Yes. Move up or down at the start of any week.</p></details>
+  <details><summary>What do we need for classes?</summary><p>A phone, tablet or computer with internet, and a quiet place to recite.</p></details>
+  <details><summary>Do you teach adults and children?</summary><p>Yes, from age 4 to adults, with separate teaching methods for each.</p></details>
+ </div>
+</section>
+
+<section class="trial" id="trial">
+ <div class="wrap box">
+  <div>
+   <h2>Book your free 7-day trial</h2>
+   <p>Tell us a little about the student. We will reply on WhatsApp to confirm your first class.</p>
+  </div>
+  <form id="f">
+   <label>Student name<input name="n" required autocomplete="name"></label>
+   <label>WhatsApp number<input name="p" required inputmode="tel" autocomplete="tel" placeholder="+92 300 1234567"></label>
+   <label>Student age<input name="a" required inputmode="numeric" placeholder="e.g. 8"></label>
+   <label>Country<input name="co" required autocomplete="country-name" placeholder="e.g. United Kingdom"></label>
+   <label>Preferred class time<input name="t" required placeholder="e.g. 6 PM UK time, weekdays"></label>
+   <label>Course<select name="c"><option>Noorani Qaida</option><option>Quran with Tajweed</option><option>Hifz</option><option>Translation &amp; Tafseer</option><option>Arabic Language</option></select></label>
+   <label>Plan<select name="pl"><option>Basic – $10/week</option><option selected>Standard – $15/week</option><option>Premium – $20/week</option></select></label>
+   <button class="btn btn-gold" type="submit">Claim free trial on WhatsApp</button>
+   <p style="margin:0;font-size:.85rem;color:var(--muted)">WhatsApp opens with the student's details ready. Press Send to book.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <p class="logo">QuranEducation</p>
+  <p>Live online Quran classes for children and adults.</p>
+  <p>© 2026 Quran Education Academy. All rights reserved.</p>
+ </div>
+</footer>
+<a class="wa" id="wa" href="#trial">WhatsApp us</a>
+
+<script>
+// WhatsApp number, digits only with country code (Pakistan +92)
+var PHONE="923015553128";
+var m=document.getElementById("menu"),l=document.getElementById("links");
+m.addEventListener("click",function(){var o=l.classList.toggle("open");m.setAttribute("aria-expanded",o)});
+l.addEventListener("click",function(e){if(e.target.tagName==="A"){l.classList.remove("open");m.setAttribute("aria-expanded",false)}});
+document.getElementById("wa").href="https://wa.me/"+PHONE+"?text="+encodeURIComponent("Assalamu alaikum, I would like to know about Quran classes.");
+document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();var d=new FormData(e.target);
+var t="Assalamu alaikum, I want the 7-day free trial.\nStudent name: "+d.get("n")+"\nAge: "+d.get("a")+"\nCountry: "+d.get("co")+"\nWhatsApp: "+d.get("p")+"\nCourse: "+d.get("c")+"\nPlan: "+d.get("pl")+"\nPreferred time: "+d.get("t");
+window.location.href="https://wa.me/"+PHONE+"?text="+encodeURIComponent(t)});
+</script>
+</body>
+</html>
